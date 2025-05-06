@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Halaman dengan Bootstrap</title>
+    <!-- <link rel="stylesheet" href="bootstrap413/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <style>
+        /* Gaya kustom Anda bisa ditambahkan di sini */
+        .jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: .3rem;
+        }
+
+        .jumbotron, footer, .navbar{
+            background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+        }
+
+        img{
+            width: 200px;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+        }
+        
+        .color-red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nama Situs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container jumbotron mt-3 bg-img" data-aos="flip-down" data-aos-duration="1200">
+        <h1 class="display-2">Selamat Datang!</h1>
+        <p class="lead">Ini adalah contoh layout halaman web sederhana menggunakan Bootstrap 5.</p>
+        <hr class="my-2">
+        <p>Anda dapat menyesuaikan konten ini sesuai dengan kebutuhan Anda.</p>
+        <a class="btn btn-lg btn-outline-info" href="#" role="button">
+            Pelajari Lebih Lanjut
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div data-aos="zoom-out-down" data-aos-duration="1200">
+                    <h2>Bagian Utama</h2>
+                    <div>
+                        <img src="img/re2.jpg" alt="">
+                        <img src="img/drdr.jpg" alt="">
+                        <img src="img/sf6.jpg" alt="">
+                    </div>
+                </div>
+                
+                <p>Ini adalah bagian utama dari konten halaman. Anda dapat menambahkan teks, gambar, video, atau komponen Bootstrap lainnya di sini.</p>
+                <p>Bootstrap's grid system is responsive, and will adjust to appropriately fit whatever screen size you’re on. Layouts can be built with our grid system, using one to twelve columns. As your device or viewport shrinks in size, the columns will stack on top of each other.</p>
+                <h3>Sub-bagian</h3>
+                <ul data-aos="zoom-in" data-aos-duration="1200">
+                    <li>
+                        <span class="color-red">R</span>esident <span class="color-red">E</span>vil 2
+                    </li>
+
+                    <li>
+                        <span class="color-red">R</span>esident <span class="color-red">E</span>vil 3
+                    </li>
+
+                    <li>
+                        <span class="color-red">R</span>esident <span class="color-red">E</span>vil 4
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4" data-aos="fade-left" data-aos-duration="1200">
+                <h2>Sidebar</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Info Tambahan</h5>
+                        <p class="card-text">Ini adalah sidebar atau area konten tambahan. Anda bisa menambahkan widget, iklan, atau informasi terkait lainnya di sini.</p>
+                        <a href="#" class="btn btn-outline-info btn-sm">Lihat Lebih Banyak</a>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">Street Fighter 5</li>
+                        <li class="list-group-item">Street Fighter 6</li>
+                        <li class="list-group-item">TEKKEN 8</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-info text-center py-3 mt-5">
+        <p>&copy; 2025 Nama Situs Anda. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="bootstrap413/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
