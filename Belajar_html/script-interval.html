@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #lingkaranJs{
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            top: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="lingkaranJs"></div>
+
+    <script>
+        const lingkaranJs = document.getElementById('lingkaranJs');
+        let   opacity = 1;
+        const intervalId = setInterval(() => {
+            opacity -= 0.05;
+            lingkaranJs.style.opacity = opacity;
+
+            if(opacity <= 0) {
+                clearInterval(intervalId);
+            }
+        }, 100);
+    </script>
+    
+</body>
+</html>
